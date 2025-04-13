@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="2025 高雄資訊服務學習課程，以 Scratch 與 Python 為主軸，探索程式教育的魅力。"
+    />
+    <title>2025 Information Service at Kaohsiung - Python</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- 入場動畫區塊 -->
+    <div class="intro-animation" id="intro-animation" aria-label="入場動畫">
+      <div class="animation-container">
+        <!-- Scratch 區塊 -->
+        <div class="scratch-blocks" id="scratch-blocks">
+          <div class="scratch-block">當綠旗被點擊</div>
+          <div class="scratch-block">顯示訊息 "Hello World!"</div>
+          <div class="scratch-block">等待 2 秒</div>
+        </div>
+
+        <!-- Colab 編輯器 -->
+        <div class="colab-editor" id="colab-editor">
+          <div class="colab-toolbar">
+            <div class="colab-toolbar-title">Python.ipynb - Google Colab</div>
+          </div>
+          <div class="colab-content">
+            <div class="code-prompt">In [1]:</div>
+            <div class="typing-code" id="typing-code">
+              <span class="comment"># 從 Scratch 到 Python 的轉換</span>
+              <span class="code-line"
+                ><span class="keyword">import</span> time</span
+              >
+              <span class="code-line"
+                ><span class="keyword">def</span>
+                <span class="function">display_title</span>():</span
+              >
+              <span class="code-line">
+                <span class="keyword">print</span>(<span class="string"
+                  >"2025 Information Service at Kaohsiung"</span
+                >)</span
+              >
+              <span class="code-line">
+                <span class="keyword">print</span>(<span class="string"
+                  >"Ming Chuan University"</span
+                >)</span
+              >
+              <span class="code-line"
+                ><span class="comment"># 主程式</span></span
+              >
+              <span class="code-line"
+                ><span class="function">display_title</span>()</span
+              >
+              <span class="code-line"
+                >time.<span class="function">sleep</span>(2)</span
+              >
+              <span class="cursor"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 標題顯示 -->
+        <div class="title-reveal" id="title-reveal">
+          <h1>2025 Information Service<br />at Kaohsiung</h1>
+          <div class="subtitle">- Ming Chuan University -</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 標題區塊 -->
+    <section class="title-section" aria-label="首頁標題">
+      <h1>2025 Information Service<br />at Kaohsiung</h1>
+      <div class="subtitle">- Ming Chuan University -</div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="arrow">↓</div>
+      </div>
+    </section>
+
+    <!-- Python介紹區段 -->
+    <section class="section" id="flip-section" aria-label="Python介紹">
+      <div class="flip-text-container" id="flip-text-container">
+        <div
+          class="flippable-text python-intro init-position"
+          id="python-intro"
+        >
+          <h2>從 Scratch 到 Python</h2>
+          <p>
+            Python 是一種簡單易學但功能強大的程式語言，<br />
+            被廣泛應用於遊戲開發、網站建設、人工智慧等領域。<br />
+            本課程將帶領學生從圖形化的 Scratch 進階到文字型的 Python
+            程式設計，<br />
+            開啟程式設計的全新世界！
+          </p>
+        </div>
+        <div
+          class="flippable-text python-application init-position"
+          id="python-application"
+        >
+          <h2>Python 的應用領域</h2>
+          <p>人工智慧：Python 是 AI 開發的首選語言</p>
+          <p>網頁開發：使用 Django 或 Flask 架構建立網站</p>
+          <p>數據分析：透過 Pandas 和 NumPy 處理複雜數據</p>
+          <p>遊戲開發：使用 Pygame 製作互動式遊戲</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 課程內容區段 -->
+    <section class="section course-section" id="course-section">
+      <div class="course-container">
+        <div class="course-content" id="week1-content">
+          <h2>第一、二週課程</h2>
+          <p>課程日期：2025 Apr. 14 & Apr. 21</p>
+          <p>授課對象：國小學生</p>
+          <p>課程時間：每週一次，13:30 ~ 16:30</p>
+          <p>課程內容：</p>
+          <p>• Python 環境設置與基礎語法</p>
+          <p>• 變數、運算子與數學運算</p>
+          <p>• 輸入與輸出功能</p>
+          <p>• 從 Scratch 到 Python 的概念轉換</p>
+        </div>
+        <div class="course-content" id="week2-content">
+          <h2>第三、四週課程</h2>
+          <p>課程日期：2025 Apr. 28 & May 5</p>
+          <p>授課對象：國小學生</p>
+          <p>課程時間：每週一次，13:30 ~ 16:30</p>
+          <p>課程內容：</p>
+          <p>• 條件判斷與邏輯運算</p>
+          <p>• 迴圈結構與函數定義</p>
+          <p>• 互動小遊戲製作</p>
+          <p>• 期末專案展示</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 學習路徑區段 -->
+    <section class="section path-section" id="path-section">
+      <div class="path-container">
+        <h2>Python 學習路徑</h2>
+        <div class="path-timeline">
+          <div class="path-item" id="path-item-1">
+            <div class="path-icon">1</div>
+            <div class="path-content">
+              <h3>基礎入門</h3>
+              <p>安裝 Python、認識介面、基本語法與運算</p>
+            </div>
+          </div>
+          <div class="path-item" id="path-item-2">
+            <div class="path-icon">2</div>
+            <div class="path-content">
+              <h3>程式控制</h3>
+              <p>條件判斷、迴圈結構、函數定義與使用</p>
+            </div>
+          </div>
+          <div class="path-item" id="path-item-3">
+            <div class="path-icon">3</div>
+            <div class="path-content">
+              <h3>資料結構</h3>
+              <p>列表、字典、集合等資料型態的使用</p>
+            </div>
+          </div>
+          <div class="path-item" id="path-item-4">
+            <div class="path-icon">4</div>
+            <div class="path-content">
+              <h3>專案實作</h3>
+              <p>結合所學概念，完成一個小型 Python 專案</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 學習資源區段 -->
+    <section class="section resources-section" id="resources-section">
+      <div class="resources-container">
+        <h2>學習資源</h2>
+        <div class="resources-grid">
+          <div class="resource-card" id="resource-card-1">
+            <div class="resource-icon">📚</div>
+            <h3>線上教材</h3>
+            <p>課程講義與練習題</p>
+            <a href="#" class="resource-button">立即查看</a>
+          </div>
+          <div class="resource-card" id="resource-card-2">
+            <div class="resource-icon">🧑‍💻</div>
+            <h3>Colab 練習平台</h3>
+            <p>使用 Google Colab 撰寫與執行程式</p>
+            <a
+              href="https://colab.research.google.com/"
+              target="_blank"
+              class="resource-button"
+              >前往練習</a
+            >
+          </div>
+          <div class="resource-card" id="resource-card-3">
+            <div class="resource-icon">🎮</div>
+            <h3>Scratch 連結</h3>
+            <p>重新回顧 Scratch 程式的邏輯與操作</p>
+            <a
+              href="https://scratch.mit.edu/"
+              target="_blank"
+              class="resource-button"
+              >開啟 Scratch</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+      <div class="footer-left">2025 Information Service<br />at Kaohsiung</div>
+      <div class="footer-right">
+        Author: YuCheng<br />
+        12130340@me.mcu.edu.tw<br />
+        Copyright © 2025 YuCheng. All rights reserved<br />
+        Recommended browsers: Google Chrome, Safari<br />
+        This page is hosted on GitHub, Vercel.
+      </div>
+    </footer>
+
+    <!-- 入場動畫腳本 -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const scratch = document.getElementById("scratch-blocks");
+        const colab = document.getElementById("colab-editor");
+        const typing = document.getElementById("typing-code");
+        const title = document.getElementById("title-reveal");
+        const intro = document.getElementById("intro-animation");
+
+        setTimeout(() => {
+          scratch.style.opacity = "0";
+          scratch.style.transform = "translateY(-30px)";
+        }, 2500);
+
+        setTimeout(() => {
+          colab.style.opacity = "1";
+        }, 3000);
+
+        setTimeout(() => {
+          typing.style.animation = "fadeIn 1.5s ease-in forwards";
+        }, 3200);
+
+        setTimeout(() => {
+          title.style.opacity = "1";
+          title.querySelector("h1").style.opacity = "1";
+          title.querySelector("h1").style.transform = "scale(1)";
+          title.querySelector(".subtitle").style.opacity = "1";
+          title.querySelector(".subtitle").style.transform = "translateY(0)";
+        }, 5500);
+
+        setTimeout(() => {
+          intro.style.opacity = "0";
+          intro.style.pointerEvents = "none";
+        }, 7000);
+
+        setTimeout(() => {
+          document.querySelector(".title-section").classList.add("loaded");
+          document
+            .querySelector(".title-section")
+            .scrollIntoView({ behavior: "smooth" });
+
+          // ✅ 滾動時觸發淡入動畫的元素觀察器
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("show");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            {
+              threshold: 0.1,
+            }
+          );
+
+          const sectionsToShow = document.querySelectorAll(
+            ".course-content, .flippable-text, .path-item, .resource-card"
+          );
+          sectionsToShow.forEach((el) => observer.observe(el));
+        }, 7500);
+      });
+    </script>
+  </body>
+</html>
