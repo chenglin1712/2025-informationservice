@@ -761,3 +761,49 @@ html {
     grid-template-columns: 1fr;
   }
 }
+/* ✅ 讓箭頭只在 flip-section 裡，並定位在左右側中間 */
+#flip-section {
+  position: relative;
+}
+
+#flip-section .flip-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#flip-section .flip-arrow:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#flip-section .flip-arrow.left {
+  left: 20px;
+}
+
+#flip-section .flip-arrow.right {
+  right: 20px;
+}
+
+/* ✅ 小螢幕時往內縮 */
+@media (max-width: 768px) {
+  #flip-section .flip-arrow.left {
+    left: 10px;
+  }
+  #flip-section .flip-arrow.right {
+    right: 10px;
+  }
+}

@@ -108,35 +108,38 @@
           <p>數據分析：透過 Pandas 和 NumPy 處理複雜數據</p>
           <p>遊戲開發：使用 Pygame 製作互動式遊戲</p>
         </div>
-      </div>
-    </section>
 
-    <!-- 課程內容區段 -->
-    <section class="section course-section" id="course-section">
-      <div class="course-container">
-        <div class="course-content" id="week1-content">
-          <h2>第一、二週課程</h2>
-          <p>課程日期：2025 Apr. 14 & Apr. 21</p>
-          <p>授課對象：國小學生</p>
-          <p>課程時間：每週一次，13:30 ~ 16:30</p>
-          <p>課程內容：</p>
-          <p>• Python 環境設置與基礎語法</p>
-          <p>• 變數、運算子與數學運算</p>
-          <p>• 輸入與輸出功能</p>
-          <p>• 從 Scratch 到 Python 的概念轉換</p>
-        </div>
-        <div class="course-content" id="week2-content">
-          <h2>第三、四週課程</h2>
-          <p>課程日期：2025 Apr. 28 & May 5</p>
-          <p>授課對象：國小學生</p>
-          <p>課程時間：每週一次，13:30 ~ 16:30</p>
-          <p>課程內容：</p>
-          <p>• 條件判斷與邏輯運算</p>
-          <p>• 迴圈結構與函數定義</p>
-          <p>• 互動小遊戲製作</p>
-          <p>• 期末專案展示</p>
-        </div>
+        <button id="prev-btn" class="flip-arrow left">〈</button>
+        <button id="next-btn" class="flip-arrow right">〉</button>
       </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const introCard = document.getElementById("python-intro");
+          const appCard = document.getElementById("python-application");
+          const nextBtn = document.getElementById("next-btn");
+          const prevBtn = document.getElementById("prev-btn");
+
+          introCard.style.opacity = "1";
+          introCard.style.transform = "translateY(0)";
+          appCard.style.opacity = "0";
+          appCard.style.transform = "translateY(50px)";
+
+          nextBtn.addEventListener("click", () => {
+            introCard.style.opacity = "0";
+            introCard.style.transform = "translateY(50px)";
+            appCard.style.opacity = "1";
+            appCard.style.transform = "translateY(0)";
+          });
+
+          prevBtn.addEventListener("click", () => {
+            appCard.style.opacity = "0";
+            appCard.style.transform = "translateY(50px)";
+            introCard.style.opacity = "1";
+            introCard.style.transform = "translateY(0)";
+          });
+        });
+      </script>
     </section>
 
     <!-- 學習路徑區段 -->
